@@ -1,0 +1,90 @@
+body {
+    text-align: center;
+    background-color: #F5D6EC;
+  }
+  
+  .description {
+    width: 800px;
+    margin: auto auto 50px;
+  }
+  
+  h1 {
+    font-family: Georgia;
+    font-size: 50px;
+  }
+  
+  p {
+    font-family: Helvetica;
+    font-size: 24px;
+  }
+  
+  h2 {
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  h3 {
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .game {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  
+  .score-section {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 40px; 
+    grid-template-rows: repeat(21, 50px);
+  }
+  
+  .oneto3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: pink;
+  }
+  
+  .oneto4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: purple;
+  }
+  
+  .score {
+    background-color: lightblue;
+  }
+  
+  .score-lock {
+    height: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  
+  .dice {
+    height: 100px;
+    margin: 10px 10px 0px;
+  }
+  
+  .lock {
+    height: 20px;
+    margin: auto 50px 30px;
+  }
+  
+  .button {
+    background-color: #672A4E;
+    color: #fff;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    margin: 20px 15px;
+    padding: .5em .5em;
+    font-family: Helvetica;
+    border-radius: 10px;
+    line-height: 30px;
+    display: inline-block;
+  }

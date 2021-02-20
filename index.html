@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahtzee</title>
+    <link href="style.css" rel='stylesheet'>
+</head>
+<body>
+    <div class='game'>
+        <h1>Yahtzee</h1>
+        
+        <div class='description'>
+         <p>Click the button to roll the dice. Click the lock icon to save the dice roll for the next turn. Each player can roll up to three times per turn.</p>
+      </div>
+        
+        <div class='score-section'>
+          <h2 class='oneto4'>Upper Section</h2>
+          <h2>Score</h2>
+      
+          <h3 class='oneto3'>Ones</h3>
+          <h3>Add only ones</h3>
+          <h3 class='score' id='one-score'></h3>
+          <img id='one-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h3 class='oneto3'>Twos</h3>
+          <h3>Add only twos</h3>
+          <h3 class='score' id='two-score'></h3>
+          <img id='two-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h3 class='oneto3'>Threes</h3>
+          <h3>Add only threes</h3>
+          <h3 class='score' id='three-score'></h3>
+          <img id='three-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h3 class='oneto3'>Fours</h3>
+          <h3>Add only fours</h3>
+          <h3 class='score' id='four-score'></h3>
+          <img id='four-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h3 class='oneto3'>Fives</h3>
+          <h3>Add only fives</h3>
+          <h3 class='score' id='five-score'></h3>
+          <img id='five-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h3 class='oneto3'>Sixes</h3>
+          <h3>Add only sixes</h3>
+          <h3 class='score' id='six-score'></h3>
+          <img id='six-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h2 class='oneto4'>Total Score</h2>
+          <h3 class='score' id='upper-score'></h3>
+          <h3></h3>
+      
+          <h2>Bonus</h2>
+          <h3>If score is ≥ 63</h3>
+          <h3>Score 35</h3>
+          <h3 class='score' id='upper-bonus-score'></h3>
+          <h3></h3>
+      
+          <h2 class='oneto4'>Total of Upper Section</h2>
+          <h3 class='score' id='total-upper-score'></h3>
+          <h3></h3>
+      
+          <h2 class='oneto4'>Lower Section</h2>
+          <h3></h3>
+          <h3></h3>
+      
+          <h3 class='oneto3'>3 of a Kind</h3>
+          <h3>Total of All Dice</h3>
+          <h3 class='score' id='3kind-score'></h3>
+          <img id='3kind-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h3 class='oneto3'>4 of a Kind</h3>
+          <h3>Total of All Dice</h3>
+          <h3 class='score' id='4kind-score'></h3>
+          <img id='4kind-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h3 class='oneto3'>Full House</h3>
+          <h3>Score 25</h3>
+          <h3 class='score' id='full-score'></h3>
+          <img id='full-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h3>Small Straight</h3>
+          <h3>Sequence of 4</h3>
+          <h3>Score 30</h3>
+          <h3 class='score' id='smstraight-score'></h3>
+          <img id='smstr-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h3>Large Straight</h3>
+          <h3>Sequence of 5</h3>
+          <h3>Score 40</h3>
+          <h3 class='score' id='lgstraight-score'></h3>
+          <img id='lgstr-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h3>Yahtzee</h3>
+          <h3>5 of a Kind</h3>
+          <h3>Score 50</h3>
+          <h3 class='score' id='yahtzee-score'></h3>
+          <img id='yahtzee-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h3 class='oneto3'>Chance</h3>
+          <h3>Total of All Dice</h3>
+          <h3 class='score' id='chance-score'></h3>
+          <img id='chance-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h3 class='oneto3'>Yahtzee Bonus</h3>
+          <h3>Score 100</h3>
+          <h3 class='score' id='yahtbonus-score'></h3>
+          <img id='yahtbonus-lock' class='score-lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+      
+          <h2 class='oneto4'>Total of Lower Section</h2>
+          <h3 class='score' id='total-lower-score'></h3>
+          <h3></h3>
+      
+          <h2 class='oneto4'>Total Game Score</h2>
+          <h3 class='score' id='total-game-score'></h3>
+          <h3></h3>
+        </div>
+        
+        <div class='rolling'>
+          <div class='dice-section'>
+            <img id='dice1' class='dice' src='https://cdn1.iconfinder.com/data/icons/inked/100/Dice-512.png'>
+            <img id='dice2' class='dice' src='https://cdn1.iconfinder.com/data/icons/inked/100/Dice-512.png'>
+            <img id='dice3' class='dice' src='https://cdn1.iconfinder.com/data/icons/inked/100/Dice-512.png'>
+            <img id='dice4' class='dice' src='https://cdn1.iconfinder.com/data/icons/inked/100/Dice-512.png'>
+            <img id='dice5' class='dice' src='https://cdn1.iconfinder.com/data/icons/inked/100/Dice-512.png'>
+          </div>
+      
+          <div class='lock-section'>
+            <img id='lock1' class='lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+            <img id='lock2' class='lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+            <img id='lock3' class='lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+            <img id='lock4' class='lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+            <img id='lock5' class='lock' src='https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Unlock-icon.png'>
+          </div>
+      
+          <div id='counter'>
+            <p>Roll Number: <span id='roll-counter'></span></p>
+          </div>
+      
+          <div id='roll-button' class='button'>
+            Roll the Dice
+          </div>
+      
+          <div id='reset-button' class='button'>
+           Reset 
+          </div>
+        </div>
+        
+      </div>
+      <script src='script.js'></script>
+</body>
+</html>
